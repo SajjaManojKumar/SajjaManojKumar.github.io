@@ -107,5 +107,9 @@ _Jun 2021 - Aug 2021_
 
 ---
 
+[Experiment Page](newPage.md)
+
+---
+
 ## Conclusion
 I am passionate about advancing the fields of AI and ML, particularly in their applications in Image and Video Processing. My academic foundation, professional experience, and commitment to innovation prepare me to tackle the challenges of graduate studies and contribute meaningfully to the field of computer science.
