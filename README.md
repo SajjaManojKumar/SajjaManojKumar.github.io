@@ -1,3 +1,3 @@
-```html
-<meta http-equiv="refresh" content="0; url=homePage.html" />
-```
+<script type="text/javascript">
+  location.replace(location.href+"/homePage.html");
+</script>
