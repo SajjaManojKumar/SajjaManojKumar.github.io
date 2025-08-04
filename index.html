@@ -3,25 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-        // TODO: Update homePage.html and the redirect URL
-        // // Redirect to homePage.html
-        // window.location.href = "homePage.html";
-
-        // TODO: This is temporary. Update the redirect URL to the homepage page
-        // Redirect to the Resume page
-        window.onload = function() {
-            window.location.href = "Resume/resume.html";
-        };
-    </script>
+    <title>Manoj Kumar Sajja - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f7f9fa;
+            margin: 0;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0.5rem 0 1rem 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .links a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 0.5rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+            overflow-y: auto;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section h2 {
+            color: #0057b8;
+            font-size: 1.5rem;
+            margin-bottom: 0.7rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.3rem;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        li {
+            margin-bottom: 0.7rem;
+            line-height: 1.7;
+        }
+        .work-role {
+            font-weight: 700;
+            color: #222;
+        }
+        .work-meta {
+            font-size: 0.98rem;
+            color: #666;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem 0.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- TODO: Update the redirect URL once homePage.html is updated
-    <h1>Redirecting...</h1>
-    <p>If you are not automatically redirected, <a href="homePage.html">click here</a>.</p> -->
+    <header>
+        <h1>Manoj Kumar Sajja</h1>
+        <p>Backend Engineer | Java, Spring Boot, AWS | Microservices | Cloud & Data Enthusiast</p>
+        <div class="links">
+            <a href="mailto:manojkumarsajja@gmail.com">Email</a> |
+            <a href="https://www.linkedin.com/in/manoj-kumar-sajja/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/SajjaManojKumar" target="_blank">GitHub</a>
+        </div>
+        <div style="margin-top:0.5rem;font-size:1rem;">Bangalore, India | +91 7483627560</div>
+    </header>
+    <div class="container">
+        <section class="section">
+            <h2>Professional Summary</h2>
+            <ul>
+                <li>Backend engineer with 3+ years of experience building high-performance systems using Java, Spring Boot, and AWS. Adept at designing scalable architectures and delivering robust solutions for commerce and finance domains.</li>
+                <li>Specialized in microservices, focusing on reliability, observability, and extensibility. Proven track record in developing RESTful APIs and integrating cloud-native technologies.</li>
+                <li>Collaborative team player in agile environments, skilled in debugging, code reviews, and mentoring peers to elevate team productivity and code quality.</li>
+                <li>Strong communication and stakeholder management skills, ensuring alignment between technical deliverables and business objectives.</li>
+            </ul>
+        </section>
 
-    <h1>Redirecting...</h1>
-    <p>If you are not automatically redirected, <a href="Resume/resume.html">click here</a>.</p>
+        <section class="section">
+            <h2>Skills & Tools</h2>
+            <ul>
+                <li><strong>Backend:</strong> Java, Spring Boot, REST APIs, Guice, JUnit, Multithreading, OOP, Python, C++</li>
+                <li><strong>Cloud/DevOps:</strong> AWS (Lambda, ECS, S3, SNS, SQS), Kubernetes, Git, CI/CD pipelines, Docker</li>
+                <li><strong>Database:</strong> PostgreSQL, DynamoDB, Redshift, MySQL</li>
+                <li><strong>Process:</strong> Agile methodologies, effective communication, stakeholder collaboration, project planning, debugging, unit & integration testing, performance tuning</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <span class="work-role">Software Development Engineer, Zeta</span>
+                    <span class="work-meta">Bangalore | Feb 2024 – Present</span>
+                    <ul>
+                        <li>Built a platform for scheduling and automating delivery of custom reports, enabling 200+ daily reports with sub-hour SLO for files up to 4.9GB. Designed scalable workflows to handle large data volumes efficiently.</li>
+                        <li>Engineered CRUD APIs for workspace and data source management, onboarding PostgreSQL and Redshift with extensible patterns for future integrations. Ensured robust security and data integrity.</li>
+                        <li>Developed a dynamic search API with customizable filters, allowing granular querying in reporting systems and reducing the need for multiple endpoint variants.</li>
+                        <li>Designed approval workflows for publishing connectors in financial systems, enhancing compliance and operational control. Collaborated with product and frontend teams to deliver high-throughput REST APIs with strong contract adherence.</li>
+                        <li>Optimized system performance using multithreading and connection pooling strategies, resulting in improved throughput and reduced latency.</li>
+                    </ul>
+                </li>
+                <li>
+                    <span class="work-role">Software Development Engineer, Amazon</span>
+                    <span class="work-meta">Bangalore | Feb 2022 – Dec 2023</span>
+                    <ul>
+                        <li>Contributed to building and maintaining orchestration systems for fulfillment and billing of data product orders, supporting nearly 17M daily transactions. Automated tax calculation for 3rd-party billing providers (Google, Apple), enabling accurate processing of 2.3M+ orders.</li>
+                        <li>Developed event-driven architecture using AWS Lambda, SQS, and SNS to support scalable asynchronous workflows. Implemented validation guardrails to ensure legal state transitions, enhancing reliability and consistency across ~19M order workflows.</li>
+                        <li>Delivered client-specific kill-switch mechanism to bypass payments during outages, reducing customer impact during high-severity incidents.</li>
+                        <li>Designed traceability infrastructure to ensure end-to-end order visibility and resolution, supporting 17M+ successful daily fulfillments.</li>
+                        <li>Mentored an intern by guiding onboarding, providing training, and supporting him through the full project lifecycle from design to implementation.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Music Generator (GAN):</strong> Developed a GAN-based piano music generator with tuned discriminators and structured output evaluation. Implemented advanced neural network architectures and optimized training pipelines for realistic music synthesis.</li>
+                <li><strong>Face Mask Detection:</strong> Built a CNN-based face mask detector for real-time inference on Raspberry Pi, optimized for edge environments. Integrated IoT devices for efficient monitoring and alerting in public spaces.</li>
+                <li><strong>State Transition Guardrails:</strong> Improved system reliability for 19M digital orders by implementing robust validation logic and automated error handling.</li>
+                <li><strong>Client Controlled Kill Switch:</strong> Designed and deployed a mechanism to balance customer experience during outages, allowing dynamic control over payment workflows.</li>
+                <li><strong>Fulfillment Traceability:</strong> Enhanced observability in digital order orchestration by building traceability infrastructure for end-to-end monitoring and resolution.</li>
+                <li><strong>Blockchain Vehicular Networks:</strong> Integrated blockchain technology into vehicular networks to securely store and share data, improving security and transparency in automotive systems.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Certifications & Achievements</h2>
+            <ul>
+                <li><strong>Innovation Patent:</strong> Low-Cost Mask Detection (Australian Government, Patent No: 2020104124). Recognized for developing a cost-effective solution for real-time surveillance and public safety.</li>
+                <li><strong>Google Cloud Certifications:</strong> Cloud Engineer and Machine Learning Tracks. Demonstrated expertise in cloud infrastructure, data engineering, and ML model deployment.</li>
+                <li><strong>TOEFL:</strong> Scored 102/120, showcasing strong English proficiency for global collaboration.</li>
+                <li><strong>Other Certifications:</strong> TensorFlow, Data Science (Python), Image & Video Processing. Completed advanced coursework and hands-on projects in machine learning and computer vision.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <p><strong>B.E. in Computer Science and Engineering</strong><br>N.M.A.M. Institute of Technology, Nitte, Udupi (2018 – 2022)<br>Grade: 8.91/10</p>
+        </section>
+    </div>
 </body>
 </html>

@@ -1,0 +1,114 @@
+% Manoj Kumar Sajja's Resume - Modified Minimalist Template
+\documentclass[8.5pt, letterpaper]{article}
+
+% Packages and Setup
+\usepackage[ignoreheadfoot, top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm, footskip=0.6cm]{geometry}
+\usepackage{titlesec, tabularx, array, xcolor, enumitem, fontawesome5, amsmath, hyperref, eso-pic, calc, bookmark, lastpage, changepage, paracol, ifthen, needspace, iftex, charter}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\hypersetup{pdftitle={Manoj Kumar Sajja Resume}, pdfauthor={Manoj Kumar Sajja}, colorlinks=true, urlcolor=primaryColor}
+
+% ATS-friendly setup
+\ifPDFTeX
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\fi
+
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.1cm}
+\pagenumbering{gobble}
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\normalsize}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.15cm}{0.15cm}
+
+% Custom environments with adjusted spacing
+\newenvironment{highlights}{\begin{itemize}[topsep=0.03cm, parsep=0.03cm, partopsep=0pt, itemsep=2pt, leftmargin=10pt]}{\end{itemize}}
+\newenvironment{workhighlights}{\begin{itemize}[topsep=0.02cm, parsep=0.02cm, partopsep=0pt, itemsep=1pt, leftmargin=10pt]}{\end{itemize}}
+\newenvironment{onecolentry}{\begin{adjustwidth}{0cm}{0cm}\vspace{0.5pt}}{\end{adjustwidth}\vspace{1.5pt}}
+\newenvironment{twocolentry}[2]{\begin{onecolentry}\begin{paracol}{2}\raggedright\textbf{#1}\raggedleft\textbf{#2}\end{paracol}\end{onecolentry}}
+
+  \begin{document}
+
+% Header - Modified with LinkedIn/GitHub on new line
+    \begin{center}
+{\Large \textbf{Manoj Kumar Sajja}} \\[0.1cm]
+\small
+Bangalore, India \quad $\vert$ \quad
+\href{mailto:manojkumarsajja@gmail.com}{manojkumarsajja@gmail.com} \quad $\vert$ \quad
++91 7483627560 \\[0.03cm]
+\href{https://linkedin.com/in/manoj-kumar-sajja}{linkedin.com/in/manoj-kumar-sajja} \quad $\vert$ \quad
+\href{https://github.com/SajjaManojKumar}{github.com/SajjaManojKumar}
+\end{center}
+
+\section{Professional Summary}
+\begin{onecolentry}
+Software Development Engineer with 3+ years of experience in building systems using Java, Spring Boot, and AWS. Worked on microservices in commerce and financial domains, contributing to reliable, observable services. Comfortable working in agile teams, supporting design, debugging, distributed systems, and mentoring responsibilities.
+\end{onecolentry}
+
+\section{Skills and Tools}
+\begin{onecolentry}
+\begin{tabularx}{\linewidth}{@{}lX@{}}
+\textbf{Programming Languages:} & Java, Python, C++ \\
+\textbf{Frameworks \& Libraries:} & Spring Boot, Guice, JUnit \\
+\textbf{Architecture \& Design:} & Microservices Architecture, Event-Driven Architecture, Design Patterns, System Design \\
+\textbf{Cloud \& DevOps:} & AWS (Lambda, ECS, S3, SNS, SQS), Kubernetes, CI/CD, Jenkins, Prometheus, Grafana, Git \\
+\textbf{Databases:} & PostgreSQL, DynamoDB, Redshift \\
+\textbf{Development Practices:} & Agile, Code Review, Technical Leadership, Performance Optimization \\
+\end{tabularx}
+\end{onecolentry}
+
+\section{Work Experience}
+
+\begin{twocolentry}{Software Development Engineer, Zeta}{\hfill Bangalore $\vert$ Feb 2024 -- Present}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{workhighlights}
+\item Built platform for scheduling and automating delivery of custom reports; enabled 200+ daily reports with \textless1hr SLO for files up to 4.9GB.
+\item Engineered CRUD APIs for workspace and data source management; onboarded PostgreSQL and Redshift with extensible patterns for future source integrations.
+\item Built a dynamic search API with complex, customizable filters to allow granular querying in reporting systems; reduced need for multiple endpoint variants.
+\item Designed approval workflows for publishing connectors in financial systems, enhancing compliance and operational control.
+\item Collaborated with product and frontend teams to deliver high-throughput REST APIs with strong contract adherence.
+\end{workhighlights}
+\end{onecolentry}
+
+\vspace{0.3em}
+
+\begin{twocolentry}{Software Development Engineer, Amazon}{\hfill Bangalore $\vert$ Feb 2022 -- Dec 2023}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{workhighlights}
+\item Contributed to building and maintaining orchestration systems for fulfillment and billing of data product orders, supporting nearly 17M daily transactions.
+\item Automated tax calculation for 3rd-party billing providers (Google, Apple), enabling accurate processing of 2.3M+ orders.
+\item Developed event-driven architecture using AWS Lambda, SQS, and SNS to support scalable async workflows.
+\item Implemented validation guardrails to ensure legal state transitions, enhancing reliability and consistency across ~19M order workflows.
+\item Delivered client-specific kill-switch mechanism to bypass payments during outages; reduced customer impact during high-severity incidents.
+\item Designed traceability infrastructure to ensure end-to-end order visibility and resolution; supported 17M+ successful daily fulfillments.
+\item Mentored an intern by guiding onboarding, providing training, and supporting him with full project lifecycle from design to implementation.
+\end{workhighlights}
+\end{onecolentry}
+
+\section{Projects}
+
+\begin{onecolentry}
+\textbf{Music Generator (GAN)} -- Developed a GAN-based piano music generator with tuned discriminators and structured output evaluation.
+\end{onecolentry}
+
+\begin{onecolentry}
+\textbf{Face Mask Detection} -- Built a CNN-based face mask detector for real-time inference on Raspberry Pi, optimized for edge environments.
+\end{onecolentry}
+
+\section{Certifications and Achievements}
+\begin{highlights}
+\item Innovation Patent: Low-Cost Mask Detection (Patent No: 2020104124)
+\item Google Cloud Certifications: Cloud Engineer and ML Tracks
+\end{highlights}
+
+\section{Education}
+\begin{twocolentry}{B.E. in Computer Science, N.M.A.M. Institute of Technology}{\hfill Nitte, Udupi $\vert$ 2018 -- 2022}
+Grade: 8.91/10
+\end{twocolentry}
+
+\end{document}
